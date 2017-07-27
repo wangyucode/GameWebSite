@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>滚蛋吧！</title>
+
+    <!-- Bootstrap -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="roll.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img alt="Brand" src="logo_48.png"
+                                                  style="display: inline;margin-right: 10px;margin-left: 10px"> 滚蛋吧全球排行榜</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="container">
+        <div class="col-md-9">
+            <table class="table table-striped">
+                <thead>
+                <tr class="list-head">
+                    <th>排名</th>
+                    <th>成绩</th>
+                    <th>昵称</th>
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                <!--填充-->
+                </tbody>
+            </table>
+            <br>
+            <img src="download.png" class = "img-responsive" style="vertical-align: middle"/>
+
+            <button class="btn btn-info" role="button" style="vertical-align: middle;margin-top: 10px;margin-bottom:50px;width: 100%" onclick="download()">下载Android版</button>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row footer-bottom">
+            <ul class="list text-center">
+                <li class="li-bottom"><a href="http://wycode.cn/" target="_blank" style="color: white">wycode.cn</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px;
+    font-size: 18px;
+    line-height: 20px;
+
+}
+
+.navbar-default {
+    background-color: #58c9b9;
+    border-color: #519d9e;
+
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+footer{
+    background-color: #D1B6E1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    vertical-align: middle;
+}
+
+.list{
+    padding: 2px;
+    margin: 0px;
+}
+
+.li-bottom{
+    list-style-type:none;
+}
+
+table{
+    border: solid #519d9e;
+    color: white;
+}
+
+.list-head {
+    background: #D1B6E1;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #58C9B9;
+}
+
+tr{
+    background-color: #9DC8C8;
+}
