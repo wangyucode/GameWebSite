@@ -25,11 +25,27 @@ function resolveData(data) {
     });
 }
 
+function getMyScoreAndRank(id) {
+    $.post("http://wycode.cn/api/score/getScoreAndRanking",
+        {
+            gameId: "1",
+            userId: id
+        },
+        function (data) {
+            if(data.code ===1){
+                var tr = '<tr><td>'+data.data.rank+'</td><td>'+data.data.score+'</td><td>'+data.data.name+'</td></tr>';
+                $("#table-body").append(tr);
+            }else{
+                alert(data.message);
+            }
+        });
+}
+
+
 $(function () {
     var params = getParams();
-    if(params.length>0&&null!==params['rank']&&null!==params['score']&&null!==params['name']){
-        var tr = '<tr><td>'+params['rank']+'</td><td>'+params['score']+'</td><td>'+params['name']+'</td></tr>';
-        $("#table-body").append(tr);
+    if(params.length>0&&null!==params['id']&&undefined!==params['id']){
+        getMyScoreAndRank(params['id']);
         var btn = '<button type="button" class="btn btn-info" style="vertical-align:middle;width: 100%" onclick="btnTopClick()" id="btn-top">查看TOP10</button>';
         $('table').after(btn);
     }else{

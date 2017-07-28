@@ -50,3 +50,11 @@ table{
 tr{
     background-color: #9DC8C8;
 }
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
